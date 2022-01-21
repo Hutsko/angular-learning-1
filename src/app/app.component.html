@@ -1,0 +1,6 @@
+<hello name="{{ name }}"></hello>
+<div *ngFor="let car of cars; let i = index">
+  We have <b>{{ car.make }}</b> car of {{ car.model }} model which has
+  kilometrage of {{ car.kilometres }}
+</div>
+<button (click)="showAlert()">Show Alert</button>
