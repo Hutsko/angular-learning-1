@@ -30,4 +30,8 @@ export class TransportationService {
     return this.cars;
   }
 
+  addCar(car: Car) {
+    this.cars.push(car);
+  }
+
 }

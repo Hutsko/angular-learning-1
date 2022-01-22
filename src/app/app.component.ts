@@ -17,4 +17,16 @@ export class AppComponent {
   showAlert() {
     console.log("Alert has been shown");
   }
+
+  make: string;
+  model: string;
+  kilometres: number;
+
+  addCar() {
+    const newCar: Car = {make: this.make, model: this.model, kilometres: this.kilometres};
+    this.transportationService.addCar(newCar);
+  }
+
+  
+
 }
